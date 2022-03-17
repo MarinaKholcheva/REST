@@ -1,4 +1,9 @@
-@import'./section/_section_nav.scss';
+@import "./mixin/_index.scss";
+@import "./var/_index.scss";
+
+@import "./section/_nav.scss";
+@import "./section/_header.scss";
+@import "./section/_history.scss";
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +15,7 @@
     &--flex {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 }
 

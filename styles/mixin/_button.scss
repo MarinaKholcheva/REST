@@ -1,0 +1,22 @@
+@mixin button($background: #6327eb, $border-color: #6327eb) {
+  padding-left: 35px;
+  padding-right: 35px;
+  height: 48px;
+  background: $background;
+  border-color: $border-color;
+  border: 1px solid $border-color;
+  border-radius: 3px;
+  font-family: $Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  min-width: 170px;
+
+  &:hover {
+background: rgba($color: #6327eb, $alpha: 0.5);
+  }
+}
+

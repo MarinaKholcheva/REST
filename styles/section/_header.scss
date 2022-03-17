@@ -1,0 +1,52 @@
+.header {
+  background-image: url(/img/Header_img-main.jpg);
+  background-size: cover;
+  box-sizing: border-box;
+  min-height: 880px;
+  position: relative;
+  padding-top: 312px;
+  &__title {
+    position: relative;
+    z-index: 2;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    font-family: "PT Serif";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 80px;
+    text-align: center;
+    color: #ffffff;
+  }
+  &__subtext {
+    @include subtext;
+    text-align: center;
+    margin-bottom: 51px;
+  }
+  &__button-block {
+    display: flex;
+    justify-content: center;
+  }
+  &__btn-left {
+    @include button;
+    position: relative;
+    z-index: 2;
+  }
+  &__btn-right {
+    @include button(transparent, rgba(255, 255, 255, 0.295063));
+    margin-left: 30px;
+  }
+  &__deco1 {
+    position: absolute;
+    top: 184px;
+    right: 448px;
+    z-index: 1;
+  }
+  &__deco2 {
+    position: absolute;
+    left: 420px;
+    bottom: 145px;
+    z-index: 0;
+  }
+}
