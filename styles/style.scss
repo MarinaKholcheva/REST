@@ -1,0 +1,30 @@
+@import "./mixin/_index.scss";
+@import "./var/_index.scss";
+
+@import "./section/_nav.scss";
+@import "./section/_header.scss";
+@import "./section/_history.scss";
+@import "./section/_list.scss";
+@import "./section/_feedback.scss";
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    &--flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.flex {
+display: flex;
+}
+
+.burger-menu {
+    display: none;
+}

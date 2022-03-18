@@ -1,0 +1,22 @@
+.nav {
+  
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding-top: 16px;
+  
+  &__ul {
+    display: flex;
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    @include text-mini;
+    margin-left: 30px;
+    
+  }
+}
+.social-link {
+ @include social-link;
+}
+
