@@ -1,0 +1,70 @@
+.feedback {
+  background: #f9f7f2;
+  padding-top: 72px;
+  padding-bottom: 96px;
+  .subtitle {
+    @include subtitle;
+    margin-bottom: 3px;
+    text-align: center;
+  }
+  .title {
+    @include title;
+    margin-bottom: 68px;
+    text-align: center;
+  }
+  &__rotator-slide {
+    background: #ffffff;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    padding-bottom: 71px;
+    position: relative;
+    z-index: 2;
+  }
+  &__rotator {
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+  }
+  &__face {
+    width: 128px;
+    height: 128px;
+    margin: 0 auto;
+    margin-top: 65px;
+    margin-bottom: 41px;
+    position: relative;
+    z-index: 1;
+  }
+  &__deco {
+    width: 176px;
+    height: 176px;
+    position: absolute;
+    top: 17px;
+    right: 433px;
+    z-index: 0;
+  }
+  &__text {
+    @include main-text;
+    width: 770px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  &__stars {
+    width: 152px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  &__name {
+    font-family: $PT-Serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    color: #333333;
+    margin: 0 auto;
+    margin-bottom: 2px;
+  }
+  &__prof {
+    @include main-text($color: rgba(51, 51, 51, 0.501557));
+    text-align: center;
+  }
+}
