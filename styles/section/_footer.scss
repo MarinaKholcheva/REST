@@ -1,0 +1,38 @@
+.footer {
+  background: #333333;
+  padding-top: 249px;
+  padding-bottom: 103px;
+
+  &__container {
+    width: 505px;
+    margin: 0 auto;
+  }
+  &__logo-img {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+  &__ul {
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 87px;
+  }
+  a {
+    text-decoration: none;
+    @include text-mini;
+    margin-left: 35px;
+  }
+.social {
+    width: 160px;
+    height: 48px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+  .social-link {
+    @include social-link;
+  }
+  &__end-text {
+      @include text-mini;
+  }
+}
