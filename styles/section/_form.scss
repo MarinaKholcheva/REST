@@ -1,0 +1,50 @@
+.form {
+  background: #ffffff;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  padding-top: 160px;
+  padding-bottom: 160px;
+
+  &__form-section {
+    width: 50%;
+  }
+  .subtitle {
+    @include subtitle;
+    margin-bottom: 3px;
+  }
+  .title {
+    @include title;
+    margin-bottom: 41px;
+  }
+  &__form-title {
+    font-family: $Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 15px;
+  }
+
+  &__img-section {
+    width: 50%;
+    margin-left: 60px;
+    object-fit: cover;
+  }
+  &__input-wraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 36px;
+  }
+  &__input {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 48px;
+    @include main-text;
+  }
+}
