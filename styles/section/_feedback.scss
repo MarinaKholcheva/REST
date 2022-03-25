@@ -105,3 +105,36 @@
     position: relative;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .feedback {
+    &__text {
+      width: 464px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .feedback {
+    padding-top: 40px;
+    padding-bottom: 26px;
+    &__deco {
+      top: 16px;
+      right: 21px;
+      z-index: -1;
+    }
+    &__text {
+      width: 286px;
+    }
+    
+    &__button {
+    
+      top: unset;
+      left: 114px;
+      bottom: 26px;
+      &--next {
+        left: unset;
+        right: 114px;
+      }
+    }
+    
+  }
+}

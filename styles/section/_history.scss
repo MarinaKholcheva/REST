@@ -62,3 +62,57 @@
     @include button;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .history {
+    &__img {
+      width: 90%;
+      display: block;
+      margin-left: auto;
+    }
+    &__deco {
+      left: 0;
+      bottom: 54px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .history {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    overflow: hidden;
+    .container.container--flex {
+      display: block;
+    }
+    &__img-block {
+      width: 100%;
+      margin-bottom: 63px;
+    }
+    &__img {
+      display: block;
+      width: calc(100% / 12 * 10);
+      height: 281px;
+      margin: 0 auto;
+    }
+    &__deco {
+      width: 85px;
+      height: 85px;
+      left: 0;
+      bottom: 41px;
+    }
+    &__deco-inner {
+      width: 56px;
+      height: 56px;
+    }
+    &__deco-img {
+      width: 17px;
+      height: 24px;
+
+    }
+    &__text-block {
+      width: 100%;
+    }
+    .title {
+     margin-bottom: 16px;
+    }
+  }
+}

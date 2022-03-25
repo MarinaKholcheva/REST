@@ -49,4 +49,47 @@
     bottom: 145px;
     z-index: 0;
   }
+  &__deco-mob {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    padding-top: 107px;
+    min-height: 755px;
+    overflow: hidden;
+    &__title {
+      margin-left: 0;
+      font-size: 56px;
+      line-height: 64px;
+      width: 100%;
+      text-align: left;
+      margin-bottom: 29px;
+      
+    }
+    &__subtext {
+      margin-left: 0;
+      text-align: left;
+      margin-bottom: 40px;
+    }
+    &__deco2 {
+      display: none;
+    }
+    &__deco1 {
+      top: 92px;
+      right: 30px;
+    }
+    &__btn-right {
+      margin-left: 6px;
+    }
+    &__deco-mob {
+      display: block;
+      width: 346px;
+      height: 346px;
+      position: absolute;
+      right: -110px;
+      bottom: -70px;
+      z-index: 3;
+    }
+  }
 }

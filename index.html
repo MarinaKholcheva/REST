@@ -76,6 +76,9 @@
         <div class="header__deco2">
           <img src="/img/deco.svg" alt="" />
         </div>
+        <div class="header__deco-mob">
+          <img src="/img/Header_img-mobile.png" alt="" />
+        </div>
       </div>
     </div>
     <div class="history">
@@ -550,8 +553,8 @@
                 />
               </div>
             </div>
+            <button class="form__button">Find a table</button>
           </form>
-          <button class="form__button">Find a table</button>
         </div>
         <div class="form__img-section">
           <img class="form__img-main" src="/img/form__img-main.jpg" alt="" />
@@ -562,29 +565,29 @@
     <div class="footer">
       <div class="container">
         <div class="footer__container">
-        <a class="footer__logo-img" href="#"
-          ><img src="/img/Logo.svg" alt=""
-        /></a>
-        <ul class="footer__ul flex">
-          <li><a href="#"> About Us</a></li>
-          <li><a href="#"> Menu</a></li>
-          <li><a href="#"> Events</a></li>
-          <li><a href="#"> News</a></li>
-          <li><a href="#"> Contact</a></li>
-        </ul>
-        <div class="social flex">
-          <div class="social-link">
-            <a class="FB" href="#"><img src="/img/FB.svg" alt="" /></a>
+          <a class="footer__logo-img" href="#"
+            ><img src="/img/Logo.svg" alt=""
+          /></a>
+          <ul class="footer__ul flex">
+            <li><a href="#"> About Us</a></li>
+            <li><a href="#"> Menu</a></li>
+            <li><a href="#"> Events</a></li>
+            <li><a href="#"> News</a></li>
+            <li><a href="#"> Contact</a></li>
+          </ul>
+          <div class="social flex">
+            <div class="social-link">
+              <a class="FB" href="#"><img src="/img/FB.svg" alt="" /></a>
+            </div>
+            <div class="social-link">
+              <a href="#"><img src="/img/Tw.svg" alt="" /></a>
+            </div>
+            <div class="social-link">
+              <a href="#"><img src="/img/inst.svg" alt="" /></a>
+            </div>
           </div>
-          <div class="social-link">
-            <a href="#"><img src="/img/Tw.svg" alt="" /></a>
-          </div>
-          <div class="social-link">
-            <a href="#"><img src="/img/inst.svg" alt="" /></a>
-          </div>
+          <p class="footer__end-text">2022 Lectrum LLC. All Rights Reserved.</p>
         </div>
-        <p class="footer__end-text">2022 Lectrum LLC. All Rights Reserved.</p>
-      </div>
       </div>
     </div>
     <script
@@ -598,14 +601,14 @@
     ></script>
     <script>
       $(document).ready(function () {
-        $(".feedback__rotator").slick({arrows: false});
+        $(".feedback__rotator").slick({ arrows: false });
       });
-      $('.feedback__button--next').click(function () {
-        $(".feedback__rotator").slick('slickNext')
-      })
-      $('.feedback__button--prev').click(function () {
-        $(".feedback__rotator").slick('slickPrev')
-      })
+      $(".feedback__button--next").click(function () {
+        $(".feedback__rotator").slick("slickNext");
+      });
+      $(".feedback__button--prev").click(function () {
+        $(".feedback__rotator").slick("slickPrev");
+      });
     </script>
   </body>
 </html>

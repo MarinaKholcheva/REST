@@ -31,3 +31,14 @@ display: flex;
 .burger-menu {
     display: none;
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .container {
+      width: calc(100% - (2 * 27px));
+  }  
+}
+@media screen and (max-width: 1024px) {
+    .container {
+        width: calc(100% - (2 * 14px));
+    }
+}
