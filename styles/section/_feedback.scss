@@ -116,6 +116,9 @@
   .feedback {
     padding-top: 40px;
     padding-bottom: 26px;
+    &__rotator-slide {
+      padding-bottom: 110px;
+    }
     &__deco {
       top: 16px;
       right: 21px;
@@ -126,15 +129,22 @@
     }
     
     &__button {
-    
-      top: unset;
-      left: 114px;
-      bottom: 26px;
-      &--next {
-        left: unset;
-        right: 114px;
-      }
+    position: unset;
     }
-    
+   
+    &__rotator-container {
+      position: relative;
+    }
+    &__buttons {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      width: 118px;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      bottom: 26px;
+      z-index: 9;
+    }
   }
 }

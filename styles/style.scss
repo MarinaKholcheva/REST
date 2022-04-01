@@ -9,6 +9,7 @@
 @import "./section/_about.scss";
 @import "./section/_form.scss";
 @import "./section/_footer.scss";
+@import "./section/_burger_menu.scss";
 * {
     margin: 0;
     padding: 0;
@@ -28,9 +29,7 @@
 display: flex;
 }
 
-.burger-menu {
-    display: none;
-}
+
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
   .container {

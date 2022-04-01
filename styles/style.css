@@ -784,6 +784,9 @@
     padding-top: 40px;
     padding-bottom: 26px;
   }
+  .feedback__rotator-slide {
+    padding-bottom: 110px;
+  }
   .feedback__deco {
     top: 16px;
     right: 21px;
@@ -793,13 +796,25 @@
     width: 286px;
   }
   .feedback__button {
-    top: unset;
-    left: 114px;
-    bottom: 26px;
+    position: unset;
   }
-  .feedback__button--next {
-    left: unset;
-    right: 114px;
+  .feedback__rotator-container {
+    position: relative;
+  }
+  .feedback__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: absolute;
+    width: 118px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 26px;
+    z-index: 9;
   }
 }
 
@@ -1239,6 +1254,89 @@
   .footer li {
     margin-bottom: 32px;
   }
+  .footer a {
+    margin-left: 0;
+  }
+}
+
+.burger-menu {
+  padding-top: 16px;
+  padding-bottom: 100px;
+  min-height: 100%;
+  width: 100%;
+  background-image: url(/img/Burg_img.jpg);
+  background-size: cover;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 20;
+}
+
+.burger-menu.open {
+  top: 0;
+}
+
+.burger-menu.close {
+  top: -1000px;
+}
+
+.burger-menu__top {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 63px;
+}
+
+.burger-menu__close {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.burger-menu__ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+.burger-menu__ul li {
+  margin-bottom: 40px;
+}
+
+.burger-menu__ul li:last-child {
+  margin-bottom: 85px;
+}
+
+.burger-menu__ul a {
+  text-decoration: unset;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 32px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.burger-menu .social {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .burger-menu {
+    display: none;
+  }
 }
 
 * {
@@ -1268,10 +1366,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.burger-menu {
-  display: none;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
