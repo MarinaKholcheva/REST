@@ -47,7 +47,7 @@
         </div>
       </div>
     </div>
-    <nav class="nav">
+    <div class="nav">
       <div class="container container--flex">
         <a class="logo" href="#"><img src="/img/Logo.svg" alt="" /></a>
         <ul class="nav__ul flex">
@@ -72,8 +72,8 @@
           </div>
         </div>
       </div>
-    </nav>
-    <header class="header">
+    </div>
+    <div class="header">
       <div class="container">
         <h1 class="header__title">Welcome to our restaurant</h1>
         <p class="header__subtext">Everyday 8:00 am - 23:00 pm</p>
@@ -91,8 +91,8 @@
           <img src="/img/Header_img-mobile.png" alt="" />
         </div>
       </div>
-    </header>
-    <section class="history">
+    </div>
+    <div class="history">
       <div class="container container--flex">
         <div class="history__img-block">
           <img class="history__img" src="/img/History-main.jpg" alt="" />
@@ -130,8 +130,8 @@
           <button class="history__button">Read more</button>
         </div>
       </div>
-    </section>
-    <section class="list">
+    </div>
+    <div class="list">
       <div class="container">
         <h3 class="subtitle">Tasty dishes</h3>
         <h2 class="title">For Lunch</h2>
@@ -195,8 +195,8 @@
         </div>
         <button class="list__button">Full menu</button>
       </div>
-    </section>
-    <section class="feedback">
+    </div>
+    <div class="feedback">
       <div class="container">
         <h3 class="subtitle">What people</h3>
         <h2 class="title">Say About Us</h2>
@@ -483,8 +483,8 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="about">
+    </div>
+    <div class="about">
       <div class="container">
         <h3 class="subtitle">Press</h3>
         <h2 class="title">About Us</h2>
@@ -522,8 +522,8 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="form">
+    </div>
+    <div class="form">
       <div class="container container--flex">
         <div class="form__form-section">
           <h3 class="subtitle">Reserve</h3>
@@ -574,8 +574,8 @@
           <div class="form__deco"><img src="/img/deco4.svg" alt="" /></div>
         </div>
       </div>
-    </section>
-    <footer class="footer">
+    </div>
+    <div class="footer">
       <div class="container">
         <div class="footer__container">
           <a class="footer__logo-img" href="#"
@@ -602,7 +602,7 @@
           <p class="footer__end-text">2022 Lectrum LLC. All Rights Reserved.</p>
         </div>
       </div>
-    </footer>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -614,14 +614,7 @@
     ></script>
     <script>
       $(document).ready(function () {
-        $(".feedback__rotator").slick({
-          arrows: false,
-          dots: false,
-          infinite: true,
-          speed: 300,
-          slidesToShow: 1,
-          adaptiveHeight: true,
-        });
+        $(".feedback__rotator").slick({ arrows: false });
       });
       $(".feedback__button--next").click(function () {
         $(".feedback__rotator").slick("slickNext");
@@ -632,11 +625,11 @@
       $(".social-link.hidden").click(function () {
         $(".burger-menu").addClass("open");
         $(".burger-menu").removeClass("close");
-      });
+      })
       $(".burger-menu__close").click(function () {
         $(".burger-menu").addClass("close");
-        $(".burger-menu").removeClass("open");
-      });
+        $(".burger-menu").removeClass("open"); 
+      })
     </script>
   </body>
 </html>
